@@ -1,0 +1,27 @@
+body
+	{
+		background-color:#ffeddd;
+	}
+h1
+	{
+		color:orange;
+		text-align:center;
+		font-family:"Arial";
+		font-size:250%;
+
+	}
+p
+	{
+		font-family:"微軟正黑體";
+		font-size:40px;
+		text-align:center;
+		margin:40px;
+	}
+table
+	{
+		border:1px solid #ffdd00;
+		background-color:#ffee00;
+		padding:15px;
+		margin:50px;
+		border-radius:10px;
+	}
