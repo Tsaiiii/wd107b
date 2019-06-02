@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.list {
+	overflow:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+}
+.list a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.side
+{
+    position:absolute;
+    width:1px;
+    height:800px;
+    overflow: hidden;
+	background:#ddd;
+	transition:width 2s;
+    -webkit-transition:width 1s; /* Safari */
+    font-size:0.5px;
+}
+.side:hover
+{
+    width:150px;
+    font-size:20px;
+}
+.dropdown {
+	float:right;
+    overflow:hidden;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.list a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+ 	background-color: #f9f9f9;
+ 	min-width: 160px;
+ 	z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+<div class="list">
+	<a href="#about me">about me</a>
+    <a href="#more">more</a>
+    <div class="dropdown">
+      <button class="dropbtn" >Dropdown</button>
+      <div class="dropdown-content">
+      <a href="#meau1">1</a>
+      <a href="#meau2">2</a>
+      <a href="#meau3">3</a>
+      </div>
+    </div>
+    
+</div>
+<div class = "side">
+    <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    </ul>
+</div>
+
+
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
