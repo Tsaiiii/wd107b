@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>may's web</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.google.com/css" rel="stylesheet">
+<style>
+.background{
+	background-color:#f8e196;
+}
+.nabar {
+
+	overflow:hidden;
+    background-color:#f8e196;
+    padding:10px;
+    margin:0mm;
+    
+}
+.nabar a{
+	float:left;
+	color:white;
+    padding:10px 16px;
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.me{ 
+	padding:100px 50px;
+	background-color:#acd6ff;
+	
+}
+.little{
+	background-color:#ffffcc;
+	width:200px;
+	height:200px;
+	padding:50px 50px;
+	margin:10px;
+	border-radius:50px;
+	font-family:Comic Sans MS,Microsoft JhengHei,STHeiti Light,monospace,Arial;
+	
+}
+.footer{
+    background-color: #83f361;
+	text-align:center;
+}
+.dropdown {
+    overflow:hidden;
+	float: right;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+ .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: rgb(255, 174, 0);
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+ 	background-color: #f7db80;
+ 	min-width: 160px;
+ 	z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: rgb(240, 231, 231);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(245, 173, 90);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="nabar">
+	<a>welcome to my web</a>
+	<div class="dropdown">
+			<button class="dropbtn" >contact</button>
+			<div class="dropdown-content">
+			<a href="https://www.facebook.com/profile.php?id=100005361851395">fb</a>
+			<a href="https://www.instagram.com/hanmei_0506/">ig</a>
+			</div>
+		  </div>
+	  
+    
+    
+</div>
+
+
+<div class="me">
+	<p id="list" onclick="meList()" style="display:'';"><img src="https://i.screenshot.net/pyljjug"style="width:400px;height:400px;padding:50px 0px;"></p>
+	<div class="little" id="txt" style="display: none;" >
+		<h2>About me</h2>
+		<h4>我的名字叫 蔡涵玫<br>
+		   生活的樂趣是看別人煮飯 整理東西<br>
+		   夢想是遊遍世界</h4>
+		<p id="back" onclick="meList()" ></p>
+	</div>
+	<p id="mylist" onclick="displayList()" style="display:'';"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIaORNtAXVdzU303v20hdxJ4xzPSlRe7PYDdh44UUhfK8ABdlm"style="width:100;heigth:100;padding:50px 50px;"></p>
+	<div class="little" id="text" style="display: none;" >
+		<h2>My favorite singer</h2>
+		<h3>bts<br>
+		   shawn mendes<br>
+		   五月天</h3>
+		<p id="try" onclick="displayList()" ></p>
+	</div>
+	
+	</div>
+<div class="footer">請點圖片</div>
+<script>
+	var show=false ;
+	function displayList(){
+		if(!show){
+			show=true;
+		document.getElementById("mylist").style.display='none';
+		document.getElementById("text").style.display='';
+		document.getElementById("try").innerHTML='<font color="red">點我回去</font>';
+		}
+		else{
+			show=false;
+			document.getElementById("mylist").style.display='';
+			document.getElementById("text").style.display='none';
+			
+		}
+
+	}
+	
+	function meList(){
+		if(!show){
+			show=true;
+		document.getElementById("list").style.display='none';
+		document.getElementById("txt").style.display='';
+		document.getElementById("back").innerHTML='<font color="red">點我回去</font>';
+		}
+		else{
+			show=false;
+			document.getElementById("list").style.display='';
+			document.getElementById("txt").style.display='none';
+			
+		}
+
+	}
+	
+</script>
+    
+
+</body>
+</html>
