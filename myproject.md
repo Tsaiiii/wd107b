@@ -8,9 +8,9 @@
 
 使用技術：
 
-1.使用hover當滑鼠滑過，改變背景並出現選項
-2.利用div建立區塊(content)並放入超連結
-3.依樣利用hover改變滑鼠滑過時的背景
+1.使用hover當滑鼠滑過，改變背景並出現選項<br>
+2.利用div建立區塊(content)並放入超連結<br>
+3.依樣利用hover改變滑鼠滑過時的背景<br>
 4.點選超連結進入其他網頁
 
 ## 2.圖片
@@ -21,8 +21,8 @@
 
 使用技術：
 
-1.DIV內安排個id，讓JavaScript可以控制他
-2.預設DIV的style的display屬性，預設為【none】(不顯示)
-3.當按下圖片內容後，將div的style的display改為【】顯示
+1.DIV內安排個id，讓JavaScript可以控制他<br>
+2.預設DIV的style的display屬性，預設為【none】(不顯示)<br>
+3.當按下圖片內容後，將div的style的display改為【】顯示<br>
 4.當按下點我返回的時候，將div的style的display改為【none】不顯示
 
